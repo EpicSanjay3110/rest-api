@@ -10,7 +10,7 @@
 
   var mongoConfig={
   MONGOOSE_DEBUG: true,
-  db: 'mongodb://127.0.0.1:27017/ninja'
+  db: 'mongodb://admin:1234@ds131492.mlab.com:31492/starwars'
   };
 
   console.log(mongoConfig.db);
