@@ -10,8 +10,11 @@ router.get('/ninja',function(req , res){
 });
 
 //add new
+
 router.post('/ninja',function(req , res, next){
+  console.log("/ninja api hit");
   ninja.create(req.body).then(function(ninja){
+    console.log("/ninja created");
       res.send(ninja);
   }).catch(next);
 
