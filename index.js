@@ -10,9 +10,10 @@
 
   var mongoConfig={
   MONGOOSE_DEBUG: true,
-  db: 'mongodb://admin:1234@ds131492.mlab.com:31492/starwars'
+  db: 'mongodb://admin:1234@ds131492.mlab.com:31492/starwar'
   };
 
+////mongodb://admin:1234@ds131492.mlab.com:31492/starwars   mongodb://127.0.0.1:27017/ninja'
   console.log(mongoConfig.db);
   // mongoose.connect(mongoConfig.db, { server: { socketOptions: { keepAlive: 1 } } });
   //server: { socketOptions: { keepAlive:1, socketTimeoutMS: 0} }
