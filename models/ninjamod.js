@@ -5,9 +5,7 @@ const Schema = mongoose.Schema;
  //create ninja schema and model
 
  const ninja = Schema({
-   _id: {
-     type: String
-   },
+   _id: false,
    name: {
      type: String,
      required: [true,'Name is required']
