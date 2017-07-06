@@ -11,7 +11,6 @@
   var mongoConfig={
   MONGOOSE_DEBUG: true,
   db: 'mongodb://admin:1234@ds131492.mlab.com:31492/starwars'
-   console.log("dsdd");
   };
 
 
