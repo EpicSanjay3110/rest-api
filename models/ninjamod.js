@@ -5,8 +5,7 @@ const Schema = mongoose.Schema;
  //create ninja schema and model
 
  const ninja = Schema({
-   _id: false,
-   name: {
+      name: {
      type: String,
      required: [true,'Name is required']
    },
@@ -17,7 +16,7 @@ const Schema = mongoose.Schema;
      type:Boolean,
      default:false
    }
- });
+ },{_id: false});
 
  const Ninja =mongoose.model('ninja',ninja);
 
