@@ -26,7 +26,11 @@ router.put('/ninja/:id',function(req , res){
 });
 
 router.delete('/ninja/:id',function(req , res){
-  res.send({type:'DELETE'});
+ var id=req.params.id;
+ console.log(id);
+ninja.findByIdAndRemove({_id:id}).then(function(ninja){
+  res.send(ninja);
+})
 });
 
 module.exports = router;
